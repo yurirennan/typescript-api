@@ -6,7 +6,7 @@
   "scripts": {
     "build": "yarn tsc",
     "start": "yarn build && node dist/src/index.js",
-    "dev": ""
+    "dev": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules src/index.ts"
   },
   "keywords": [
     "nodejs",
@@ -18,6 +18,10 @@
   "devDependencies": {
     "@types/module-alias": "^2.0.1",
     "@types/node": "^16.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.3"
   },
   "dependencies": {
